@@ -1,5 +1,71 @@
-*, *::after, *::before{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-size: 16px;
+  font-family: cursive, sans-serif;
+}
+.hero {
+  min-height: 100vh;
+  background: url("Book-image2.jpg");
+  background-position: center;
+  background-size: cover;
+}
+#hero-right {
+  float: right;
+  width: 25%;
+}
+#hero-left {
+  float: left;
+  width: 75%;
+}
+.logo {
+  width: 160px;
+  border: 1px solid rgb(119, 37, 185);
+  color: white;
+}
+nav {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  padding: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 99;
+}
+nav ul li {
+  display: inline-block;
+  list-style: none;
+  margin: 8px 16px;
+}
+nav ul li a,
+.cta-btn-1,
+.cta-btn-2 {
+  text-decoration: none;
+  font-size: 15px;
+  color: #fff;
+  font-weight: 500;
+}
+nav ul li a:hover {
+  text-decoration: underline;
+  color: #ffd600;
+}
+.cta-btn-1,
+.cta-btn-2 {
+  padding: 8px 16px;
+  background-color: #ffd600;
+  border-radius: 100px;
+  color: black;
+}
+.cta-btn-1 {
+  margin-right: 16px;
+}
+.cta-btn-1:hover,
+.cta-btn-2:hover {
+  border-bottom-right-radius: 0;
 }

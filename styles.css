@@ -46,7 +46,7 @@ nav ul li a:hover {
 .cta-btn-3 {
   padding: 4px 16px;
   background-color: #ffd600;
-  border-radius: 100px;
+  border-radius: 8px;
   color: black;
 }
 .cta-btn-1 {
@@ -60,7 +60,7 @@ nav ul li a:hover {
 .cta-btn-3:hover {
   border-color: #ffd600;
 }
-.content {
+.container {
   margin-left: 4%;
   margin-top: 8%;
   max-width: 640px;
@@ -68,9 +68,12 @@ nav ul li a:hover {
   padding: 32px 64px;
   background-color: #ffd600;
   opacity: 0.9;
+  animation: moveright 2.5s;
+  animation-fill-mode: forwards;
+  position: relative;
 }
 
-.content h1 {
+.container h1 {
   font-size: 64px;
   line-height: 1;
   font-weight: bolder;
@@ -91,4 +94,13 @@ nav ul li a:hover {
   color: #ffd600;
   padding: 8px 24px;
   font-size: 20px;
+}
+@keyframes moveright {
+  from {
+    left: -600px;
+    background-color: transparent;
+  }
+  to {
+    left: 16px;
+  }
 }
